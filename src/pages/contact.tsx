@@ -33,13 +33,14 @@ export default function Contact({ myKey }: { myKey: string }) {
 					style={{ borderRadius: '10px', border: '1px solid var(--blue)', boxShadow: '0 0 5px var(--blue)' }}
 				/>
 			</Link>
-			<p>If you have any questions, please contact us</p>
+			<p>If you have any questions, please contact us via</p>
+
 			<h3>
-				WhatsApp: +49 123 456 789 | Email: 6JgJt@example.com |{' '}
 				<LinkStyle href='https://www.facebook.com/profile.php?id=100072024212247' target='_blank'>
 					Facebook
 				</LinkStyle>
 			</h3>
+			<br />
 		</HomeContainer>
 	);
 }
