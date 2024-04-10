@@ -15,6 +15,9 @@ export default function Contact({ myKey }: { myKey: string }) {
 		<HomeContainer>
 			<h1>Contact</h1>
 			<p>We meet at Kreuzpunkt im Viertel, an open room with lots of space for everyone</p>
+			<p style={{ fontSize: '16px' }}>
+				Annemarie-Renger-Str. 1g <br /> 55130 Mainz
+			</p>
 			<GoogleMap myKey={myKey} />
 			<p>If you have any questions, please contact us</p>
 			<h3>
