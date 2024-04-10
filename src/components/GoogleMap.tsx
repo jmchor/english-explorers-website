@@ -43,7 +43,7 @@ const MapStyles = styled.div`
 	}
 `;
 
-const LocationPin = ({ text }: { text: string }) => (
+const LocationPin = ({ text, lat, lng }: { text: string; lat: number; lng: number }) => (
 	<PinContainer>
 		<PinIcon icon='mdi:map-marker' />
 		<PinText>{text}</PinText>
@@ -51,7 +51,7 @@ const LocationPin = ({ text }: { text: string }) => (
 );
 
 export default function GoogleMap({ myKey }: { myKey: string }) {
-	const location = {
+	const location: { address: string; lat: number; lng: number } = {
 		address: 'kreuzpunkt | Im Viertel',
 		lat: 49.98128818482633,
 		lng: 8.281744320541934,
