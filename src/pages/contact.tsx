@@ -1,6 +1,6 @@
 import GoogleMap from '@/components/GoogleMap';
 import { HomeContainer } from './home';
-import { LinkStyle } from '@/styles/LinkStyle.js';
+import { LinkStyle } from '@/styles/LinkStyle';
 
 export async function getStaticProps() {
 	const myKey = process.env.MAPS_API_KEY as string;
