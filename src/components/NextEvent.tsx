@@ -31,6 +31,7 @@ const NextEvent: React.FC = () => {
 		const daysUntilNextWednesday = (3 - currentDate.getDay() + 7) % 7; // Calculate days until next Wednesday
 		const nextWednesday = new Date(currentDate);
 		nextWednesday.setDate(currentDate.getDate() + daysUntilNextWednesday);
+		nextWednesday.setHours(16, 15, 0, 0);
 
 		return nextWednesday;
 	};
