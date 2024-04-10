@@ -2,12 +2,20 @@ import GoogleMap from '@/components/GoogleMap';
 import { HomeContainer } from './home';
 import { LinkStyle } from '@/styles/LinkStyle';
 
-export default function Contact() {
+export async function getStaticProps() {
+	const myKey = process.env.MAPS_API_KEY as string;
+
+	return {
+		props: { myKey },
+	};
+}
+
+export default function Contact({ myKey }: { myKey: string }) {
 	return (
 		<HomeContainer>
 			<h1>Contact</h1>
 			<p>We meet at Kreuzpunkt im Viertel, an open room with lots of space for everyone</p>
-			<GoogleMap />
+			<GoogleMap myKey={myKey} />
 			<p>If you have any questions, please contact us</p>
 			<h3>
 				WhatsApp: +49 123 456 789 | Email: 6JgJt@example.com |{' '}

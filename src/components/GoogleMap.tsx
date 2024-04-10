@@ -46,9 +46,7 @@ const LocationPin = ({ text }: { text: string }) => (
 	</PinContainer>
 );
 
-const API_KEY = process.env.NEXT_PULBIC_MAPS_API_KEY as string;
-
-export default function GoogleMap() {
+export default function GoogleMap({ myKey }: { myKey: string }) {
 	const location = {
 		address: 'kreuzpunkt | Im Viertel',
 		lat: 49.98128818482633,
@@ -58,11 +56,7 @@ export default function GoogleMap() {
 	return (
 		// Important! Always set the container height explicitly
 		<MapStyles>
-			<GoogleMapReact
-				bootstrapURLKeys={{ key: 'AIzaSyBAqgCI0cwY-F_Li-ald14_pGC5ZC5sOAE' }}
-				defaultCenter={location}
-				defaultZoom={18}
-			>
+			<GoogleMapReact bootstrapURLKeys={{ key: myKey }} defaultCenter={location} defaultZoom={18}>
 				<LocationPin lat={location.lat} lng={location.lng} text={location.address} />
 			</GoogleMapReact>
 		</MapStyles>
