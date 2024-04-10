@@ -39,6 +39,7 @@ export const HomeContainer = styled.div`
 		}
 		h1,
 		h2,
+		h3,
 		p {
 			text-align: center;
 		}
@@ -88,11 +89,12 @@ export default function Home() {
 			{!showNextEvent ? (
 				<ListContainer>
 					<ul>
+						<li>Meet us for fun activities like</li>
 						<li>🎤 Singing</li>
 						<li>📖 Stories</li>
 						<li>👾 Games</li>
 						<li>🧑‍🎨 Crafts</li>
-						<li>🫧 And other fun activities!</li>
+						<li>🫧 And other adventures!</li>
 					</ul>
 				</ListContainer>
 			) : (
