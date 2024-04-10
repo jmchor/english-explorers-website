@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
+import { useRouter } from 'next/router';
 
 const Footer = styled.div`
 	display: flex;
@@ -28,9 +29,11 @@ const MainContent = styled.div`
 `;
 
 function RootLayout({ children }: { children: React.ReactNode }) {
+	const router = useRouter();
+	const showNavbar = router.pathname !== '/'; // Hide navbar on root path
 	return (
 		<MainFrame>
-			<Navbar />
+			{showNavbar && <Navbar />}
 			<MainContent>{children}</MainContent>
 			<Footer> © Johannes Chorzempa 2024</Footer>
 		</MainFrame>
