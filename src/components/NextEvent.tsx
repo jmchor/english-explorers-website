@@ -31,7 +31,6 @@ const NextEvent: React.FC = () => {
 		const daysUntilNextWednesday = (3 - currentDate.getDay() + 7) % 7; // Calculate days until next Wednesday
 		const nextWednesday = new Date(currentDate);
 		nextWednesday.setDate(currentDate.getDate() + daysUntilNextWednesday);
-		nextWednesday.setHours(16, 15, 0, 0); // Set time to 16:15:00
 
 		return nextWednesday;
 	};
@@ -55,9 +54,8 @@ const NextEvent: React.FC = () => {
 			<p>
 				<b>Next Event</b>
 			</p>
-			<p>
-				{eventDate} at {eventTime}
-			</p>
+			<p>{eventDate}</p>
+			<p style={{ fontSize: '20px' }}>from 4.15 PM - 5.45 PM</p>
 			<p>Where?</p>
 			<p>Kreuzpunkt im Viertel</p>
 		</EventContainer>
