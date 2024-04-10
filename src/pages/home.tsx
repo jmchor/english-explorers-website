@@ -83,13 +83,13 @@ export default function Home() {
 		<HomeContainer>
 			<IntroTextContainer>
 				<Headline>Welcome to English Explorers!</Headline>
-				<h2>Learn English with fun and adventure!</h2>
+				<h2>Speak English with fun and adventure!</h2>
 			</IntroTextContainer>
 			<Button onClick={toggleNextEvent}>{!showNextEvent ? 'When are we meeting?' : 'What will we be doing?'}</Button>
 			{!showNextEvent ? (
 				<ListContainer>
 					<ul>
-						<li>Meet us for fun activities like</li>
+						<li>Meet other native speaking kids for fun activities like</li>
 						<li>🎤 Singing</li>
 						<li>📖 Stories</li>
 						<li>👾 Games</li>

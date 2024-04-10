@@ -29,8 +29,8 @@ export default function About() {
 			<Aboutcontainer>
 				<h1>About</h1>
 				<p>
-					English Explorers was formed in 2013 by a group of friends who wanted to give their kids the opportunity to
-					speak their native language with other kids.
+					English Explorers was formed in 2013 by a group of native English speakers who wanted to give their kids the
+					opportunity to speak their native language with other kids.
 				</p>
 				<AccordionContainer>
 					<AccordionComponent
