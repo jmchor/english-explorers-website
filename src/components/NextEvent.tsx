@@ -40,9 +40,11 @@ const NextEvent: React.FC = () => {
 
 	const isBeforeNextEvent = currentDate < nextWednesday;
 
-	const eventDate = isBeforeNextEvent
-		? useFormattedDate(nextWednesday)
-		: useFormattedDate(new Date(currentDate.setDate(currentDate.getDate() + 7)));
+	const nextWednesdayFormatted = useFormattedDate(nextWednesday);
+
+	const nextWeekFormatted = useFormattedDate(new Date(currentDate.setDate(currentDate.getDate() + 7)));
+
+	const eventDate = isBeforeNextEvent ? nextWednesdayFormatted : nextWeekFormatted;
 
 	const eventTime = isBeforeNextEvent
 		? nextWednesday.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })
