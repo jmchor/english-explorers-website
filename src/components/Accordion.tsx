@@ -27,7 +27,7 @@ const AccordionComponent = () => {
 					aria-controls='panel1-content'
 					id='panel1-header'
 				>
-					<p>"Who is there, and who can join?"</p>
+					<p>&quot;Who is there, and who can join?&quot;</p>
 				</CustomAccordionSummary>
 				<AccordionDetails>
 					<p>
@@ -42,7 +42,7 @@ const AccordionComponent = () => {
 					aria-controls='panel1-content'
 					id='panel1-header'
 				>
-					<p>"Is this for free?"</p>
+					<p>&quot;Is this for free?&quot;</p>
 				</CustomAccordionSummary>
 				<AccordionDetails>
 					<p>
@@ -57,7 +57,7 @@ const AccordionComponent = () => {
 					aria-controls='panel1-content'
 					id='panel1-header'
 				>
-					<p>"What do you do exactly?"</p>
+					<p>&quot;What do you do exactly?&quot;</p>
 				</CustomAccordionSummary>
 				<AccordionDetails>
 					<p>
@@ -73,12 +73,12 @@ const AccordionComponent = () => {
 					aria-controls='panel1-content'
 					id='panel1-header'
 				>
-					<p>"Can I help?"</p>
+					<p>&quot;Can I help?&quot;</p>
 				</CustomAccordionSummary>
 				<AccordionDetails>
 					<p>
-						Absolutely you can help! We appreciate every support - even if it is "just" for the cleanup afterwards.
-						Please contact us so we can talk more.
+						Absolutely you can help! We appreciate every support - even if it is &quot;just&quot; for the cleanup
+						afterwards. Please contact us so we can talk more.
 					</p>
 				</AccordionDetails>
 			</Accordion>
