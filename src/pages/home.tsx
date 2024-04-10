@@ -2,7 +2,7 @@ import NextEvent from '@/components/NextEvent';
 import { happy_monkey } from '@/fonts';
 import styled from 'styled-components';
 import { useState } from 'react';
-import { Button } from '@/styles/Button';
+import { Button } from '@/styles/Button.js';
 
 export const HomeContainer = styled.div`
 	display: flex;

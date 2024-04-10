@@ -1,5 +1,5 @@
 import RootLayout from '@/components/RootLayout';
-import { GlobalStyles } from '@/styles/GlobalStyles';
+import { GlobalStyles } from '@/styles/GlobalStyles.js';
 import type { AppProps } from 'next/app';
 import { Open_Sans } from 'next/font/google';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextPageContext } from 'next';
-import useFormattedDate from '@/lib/useFormattedDate';
+import useFormattedDate from '@/lib/useFormattedDate.js';
 import styled from 'styled-components';
 // Import the custom hook
 
