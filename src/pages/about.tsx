@@ -21,6 +21,7 @@ const AccordionContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 `;
 
 export default function About() {
