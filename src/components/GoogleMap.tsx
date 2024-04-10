@@ -25,6 +25,10 @@ const PinText = styled.p`
 	padding: 10px;
 	font-size: 1.3em;
 	color: var(--blue);
+	@media screen and (max-width: 768px) {
+		font-size: 1em;
+		padding: 5px;
+	}
 `;
 
 const MapStyles = styled.div`
